@@ -87,6 +87,10 @@ function teardown() {
   runv spec
   [ -e config.json ]
 
+  # FIXME: spec validation is failing due to online website issue
+  # $cat test/config/good/minimal.json |./validate config-schema.json
+  # Could not read schema from HTTP, response status is 404 Not Found
+  skip "spec validation is failing due to online website issue"
   run ./validate src/runtime-spec/schema/config-schema.json config.json
   [ "$status" -eq 0 ]
   [[ "${lines[0]}" == *"The document is valid"* ]]
