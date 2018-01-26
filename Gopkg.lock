@@ -21,9 +21,9 @@
 
 [[projects]]
   name = "github.com/docker/docker"
-  packages = ["pkg/longpath","pkg/mount","pkg/reexec","pkg/symlink","pkg/system"]
-  revision = "092cba3727bb9b4a2f0e922cd6c0f93ea270e363"
-  version = "v1.13.1"
+  packages = ["integration-cli/checker","pkg/longpath","pkg/mount","pkg/reexec","pkg/symlink","pkg/system"]
+  revision = "90d35abf7b3535c1c319c872900fbd76374e521c"
+  version = "v17.05.0-ce-rc3"
 
 [[projects]]
   name = "github.com/docker/go-units"
@@ -36,6 +36,12 @@
   name = "github.com/glycerine/go-unsnap-stream"
   packages = ["."]
   revision = "62a9a9eb44fd8932157b1a8ace2149eff5971af6"
+
+[[projects]]
+  branch = "v1"
+  name = "github.com/go-check/check"
+  packages = ["."]
+  revision = "20d25e2804050c1cd24a7eea1e7a6447dd0e74ec"
 
 [[projects]]
   name = "github.com/gogo/protobuf"
@@ -100,6 +106,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/mohae/deepcopy"
+  packages = ["."]
+  revision = "c48cc78d482608239f6c4c92a4abd87eb8761c90"
+
+[[projects]]
+  branch = "master"
   name = "github.com/mschoch/smat"
   packages = ["."]
   revision = "90eadee771aeab36e8bf796039b8c261bebebe4f"
@@ -138,6 +150,12 @@
   packages = ["."]
   revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
   version = "v1.20.0"
+
+[[projects]]
+  name = "github.com/vdemeester/shakers"
+  packages = ["."]
+  revision = "24d7f1d6a71aa5d9cbe7390e4afb66b7eef9e1b3"
+  version = "v0.1.0"
 
 [[projects]]
   branch = "master"
@@ -194,6 +212,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6dbf99764f71d564ae41fc69b2b0d910c4f2c412ec3a05204223c0848235fc5e"
+  inputs-digest = "4e8a4ea13b1b0bec86b027607c8ebe04b9ba40fdd08e66fb07eba385a3dc14fa"
   solver-name = "gps-cdcl"
   solver-version = 1
