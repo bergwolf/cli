@@ -1,0 +1,38 @@
+[[constraint]]
+  branch = "v1"
+  name = "github.com/go-check/check"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/golang/glog"
+
+[[constraint]]
+  branch = "runv"
+  name = "github.com/kata-containers/agent"
+  source = "github.com/laijs/kata-agent"
+
+[[constraint]]
+  branch = "libcli"
+  name = "github.com/hyperhq/runv"
+  source = "github.com/bergwolf/runv"
+
+[[constraint]]
+  name = "github.com/opencontainers/runtime-spec"
+  version = "1.0.0"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/rgbkrk/libvirt-go"
+
+[[constraint]]
+  name = "golang.org/x/net"
+  revision = "a8b9294777976932365dabb6640cf1468d95c70f"
+
+[[constraint]]
+  name = "github.com/opencontainers/runc"
+  revision = "429a5387123625040bacfbb60d96b1cbd02293ab"
+
+[prune]
+  non-go = true
+  go-tests = true
+  unused-packages = true
